@@ -1,0 +1,111 @@
+#
+# # 작은 따옴표를 출력하고 싶을때
+# print("I'm learning Python")
+# print('i\'m learning Python')
+#
+# # 큰 따옴표를 출력하고 싶을때
+# print('그녀가 물었다."저기요"')
+# print("그녀가 물었다.\"저기요\"")
+#
+# a = "Hello World"
+# print()
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+# a = 'Hello Python'
+#
+# print(a.count('o'))
+# print(a.find('q'))
+#
+# print(a.index('x'))
+#
+# print(','.join(a))
+#
+# print(a.replace('Py','MY'))
+#
+# print(a.split())
+#
+# print(a.upper())
+# print(a.lower())
+#
+# a = "....app.le...."
+#
+# print(a.lstrip('.'))
+# print(a.strip('.'))
+# print(a.rstrip('.'))
+
+
+
+# 크로아티아
+
+
+# a = "c=", "c-", "dz=", "d-", "lj", "nj", "s=", "z="
+# m = input()
+#
+# i = 0
+# cut = 0
+# while i < len(m):
+#     temp = i
+#     for j in range(len(a)):
+#         if m[i:].find(a[j]) == 0:
+#             i += len(a[j])
+#             break
+#         if temp == i:
+#             i += 1
+#         cut += 1
+#
+# print(cut)
+
+
+# user = input()
+# cut = len(user)
+# for i in range(len(user)):
+#     if user[i] == "=":
+#         if user[i-1] == 'c' or user[i-1] == 's':
+#             cut -= 1
+#         else:
+#             if user[i-1] == 'z':
+#                 if user[i-2] == 'd':
+#                     cut -= 2
+#                 else:
+#                     cut -= 1
+#     elif user[i] == '-':
+#         if user[i-1] == 'c' or user[i-1] =='d':
+#             cut -= 1
+#     elif user[i] == 'j':
+#         if user[i-1] == 'l' or user[i-1] == 'n':
+#             cut -= 1
+#
+# print(cut)
+
+# 평균은 넘겠지
+# c = int(input())
+# for i in range(c):
+#     scores = input('학생수, 점수들').split()
+#     n = int(scores[0])
+#     scores = scores[1:]
+#     total = 0
+#     for j in scores:
+#         total += int(j)
+#     average = total / n
+#     N = 0
+#     for k in scores:
+#         if average < int(k):
+#             N  += 1
+#     print("%.3f%%" %(N / n * 100))
